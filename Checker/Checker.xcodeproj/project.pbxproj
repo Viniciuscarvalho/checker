@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		8A5C87E92009DAFD8EB31CD6 /* Pods_Checker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 108AA5F0CF297140F5EC5977 /* Pods_Checker.framework */; };
+		EAA7B4A51D1F116C00C9E01D /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA7B4A41D1F116C00C9E01D /* Member.swift */; };
+		EAA7B4A71D1F17C400C9E01D /* MembersViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA7B4A61D1F17C400C9E01D /* MembersViewControler.swift */; };
+		EAA7B4A91D1F17D500C9E01D /* MembersDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA7B4A81D1F17D500C9E01D /* MembersDetailsViewController.swift */; };
 		EAB8F38B1D13851E006D26C1 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB8F38A1D13851E006D26C1 /* Authentication.swift */; };
 		EAB8F38D1D138546006D26C1 /* AuthenticatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB8F38C1D138546006D26C1 /* AuthenticatorViewController.swift */; };
-		EAB8F38F1D138557006D26C1 /* AttendanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB8F38E1D138557006D26C1 /* AttendanceViewController.swift */; };
-		EAB8F3911D13856F006D26C1 /* AttendanceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB8F3901D13856F006D26C1 /* AttendanceDetailsViewController.swift */; };
 		EAFAE6D61D0C8C2700303B43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFAE6D51D0C8C2700303B43 /* AppDelegate.swift */; };
 		EAFAE6DB1D0C8C2700303B43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFAE6D91D0C8C2700303B43 /* Main.storyboard */; };
 		EAFAE6DD1D0C8C2700303B43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFAE6DC1D0C8C2700303B43 /* Assets.xcassets */; };
 		EAFAE6E01D0C8C2700303B43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFAE6DE1D0C8C2700303B43 /* LaunchScreen.storyboard */; };
 		EAFAE6EB1D0C8C2700303B43 /* CheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFAE6EA1D0C8C2700303B43 /* CheckerTests.swift */; };
 		EAFAE6F61D0C8C2700303B43 /* CheckerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFAE6F51D0C8C2700303B43 /* CheckerUITests.swift */; };
-		EAFAE70B1D0C960500303B43 /* Attendance.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFAE70A1D0C960500303B43 /* Attendance.swift */; };
 		EAFAE70F1D0C973D00303B43 /* AuthenticatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFAE70E1D0C973D00303B43 /* AuthenticatorView.swift */; };
 		EAFAE7111D0C975200303B43 /* MembersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFAE7101D0C975200303B43 /* MembersView.swift */; };
 		EAFAE7131D0C978700303B43 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFAE7121D0C978700303B43 /* Connection.swift */; };
@@ -45,10 +45,11 @@
 		108AA5F0CF297140F5EC5977 /* Pods_Checker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Checker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F6E040EB1B3E0C10FB3272 /* Pods-Checker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Checker/Pods-Checker.debug.xcconfig"; sourceTree = "<group>"; };
 		B7D1D2C011B1722519811F45 /* Pods-Checker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Checker/Pods-Checker.release.xcconfig"; sourceTree = "<group>"; };
+		EAA7B4A41D1F116C00C9E01D /* Member.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		EAA7B4A61D1F17C400C9E01D /* MembersViewControler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersViewControler.swift; sourceTree = "<group>"; };
+		EAA7B4A81D1F17D500C9E01D /* MembersDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersDetailsViewController.swift; sourceTree = "<group>"; };
 		EAB8F38A1D13851E006D26C1 /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		EAB8F38C1D138546006D26C1 /* AuthenticatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticatorViewController.swift; sourceTree = "<group>"; };
-		EAB8F38E1D138557006D26C1 /* AttendanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceViewController.swift; sourceTree = "<group>"; };
-		EAB8F3901D13856F006D26C1 /* AttendanceDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceDetailsViewController.swift; sourceTree = "<group>"; };
 		EAFAE6D21D0C8C2700303B43 /* Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFAE6D51D0C8C2700303B43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAFAE6DA1D0C8C2700303B43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,7 +62,6 @@
 		EAFAE6F11D0C8C2700303B43 /* CheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFAE6F51D0C8C2700303B43 /* CheckerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerUITests.swift; sourceTree = "<group>"; };
 		EAFAE6F71D0C8C2700303B43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EAFAE70A1D0C960500303B43 /* Attendance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attendance.swift; sourceTree = "<group>"; };
 		EAFAE70E1D0C973D00303B43 /* AuthenticatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticatorView.swift; sourceTree = "<group>"; };
 		EAFAE7101D0C975200303B43 /* MembersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersView.swift; sourceTree = "<group>"; };
 		EAFAE7121D0C978700303B43 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
@@ -168,8 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				EAB8F38C1D138546006D26C1 /* AuthenticatorViewController.swift */,
-				EAB8F38E1D138557006D26C1 /* AttendanceViewController.swift */,
-				EAB8F3901D13856F006D26C1 /* AttendanceDetailsViewController.swift */,
+				EAA7B4A61D1F17C400C9E01D /* MembersViewControler.swift */,
+				EAA7B4A81D1F17D500C9E01D /* MembersDetailsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -186,8 +186,8 @@
 		EAFAE7051D0C903400303B43 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EAFAE70A1D0C960500303B43 /* Attendance.swift */,
 				EAB8F38A1D13851E006D26C1 /* Authentication.swift */,
+				EAA7B4A41D1F116C00C9E01D /* Member.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -410,12 +410,12 @@
 			files = (
 				EAFAE7111D0C975200303B43 /* MembersView.swift in Sources */,
 				EAFAE7131D0C978700303B43 /* Connection.swift in Sources */,
+				EAA7B4A91D1F17D500C9E01D /* MembersDetailsViewController.swift in Sources */,
 				EAB8F38D1D138546006D26C1 /* AuthenticatorViewController.swift in Sources */,
+				EAA7B4A71D1F17C400C9E01D /* MembersViewControler.swift in Sources */,
 				EAB8F38B1D13851E006D26C1 /* Authentication.swift in Sources */,
+				EAA7B4A51D1F116C00C9E01D /* Member.swift in Sources */,
 				EAFAE70F1D0C973D00303B43 /* AuthenticatorView.swift in Sources */,
-				EAB8F38F1D138557006D26C1 /* AttendanceViewController.swift in Sources */,
-				EAFAE70B1D0C960500303B43 /* Attendance.swift in Sources */,
-				EAB8F3911D13856F006D26C1 /* AttendanceDetailsViewController.swift in Sources */,
 				EAFAE6D61D0C8C2700303B43 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
