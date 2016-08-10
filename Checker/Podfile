@@ -9,6 +9,7 @@ pod 'AlamofireImage', '~> 2.0'
 pod 'FoldingCell', '~> 0.8.1'
 pod 'Moya/RxSwift'
 pod 'Moya-ObjectMapper/RxSwift', '~> 1.2.1'
+pod ‘Unbox’
 
 end
 

@@ -21,12 +21,14 @@ PODS:
   - ObjectMapper (1.3.0)
   - Result (2.0.0)
   - RxSwift (2.5.0)
+  - Unbox (1.9)
 
 DEPENDENCIES:
   - AlamofireImage (~> 2.0)
   - FoldingCell (~> 0.8.1)
   - Moya-ObjectMapper/RxSwift (~> 1.2.1)
   - Moya/RxSwift
+  - Unbox
 
 SPEC CHECKSUMS:
   Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
@@ -37,7 +39,8 @@ SPEC CHECKSUMS:
   ObjectMapper: 4eb08a726e9791a93b2632049951b56a7c17e471
   Result: 9e75e1111c774c6ac594e14907b15057053a7959
   RxSwift: 402b41a50e922a0368fc14cb3bc9f4427920e8ae
+  Unbox: a6f56a1682b5fd2ba6aea96d7b1ec17599db4f05
 
-PODFILE CHECKSUM: 781fcb3463078093101ac468ff843f1e509751e7
+PODFILE CHECKSUM: 529339031b343048a786268f40c9fbcd0706654e
 
 COCOAPODS: 1.0.0

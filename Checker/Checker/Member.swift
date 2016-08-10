@@ -17,6 +17,8 @@ struct Member: Mappable {
     var response: String?
     var rsvpCount : Int!
     var guest: Int!
+    var latitude: String?
+    var longitude: String?
     
     init?(_ map: Map) {}
     
@@ -28,6 +30,8 @@ struct Member: Mappable {
         response <- map["response"]
         rsvpCount <- map["event.yes_rsvp_count"]
         guests <- map["guests"]
+        latitude <- map["venue.lat"]
+        longitude <- map["venue.lon"]
     
     }
     
