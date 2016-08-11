@@ -47,14 +47,22 @@
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name Event" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uhn-Fc-v6d">
+                                <rect key="frame" x="20" y="456" width="560" height="30"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="oAN-gw-taY" firstAttribute="trailing" secondItem="kyj-qj-MHB" secondAttribute="trailingMargin" id="1OK-Mp-hjL"/>
+                            <constraint firstItem="Uhn-Fc-v6d" firstAttribute="top" secondItem="oAN-gw-taY" secondAttribute="bottom" constant="31" id="Gnl-8A-vW1"/>
                             <constraint firstItem="TmD-ZR-4LB" firstAttribute="centerX" secondItem="oAN-gw-taY" secondAttribute="centerX" id="PJm-qe-w6U"/>
                             <constraint firstItem="TmD-ZR-4LB" firstAttribute="top" secondItem="zx6-oW-LeN" secondAttribute="bottom" constant="64" id="TY7-XJ-Nfd"/>
                             <constraint firstItem="oAN-gw-taY" firstAttribute="leading" secondItem="kyj-qj-MHB" secondAttribute="leadingMargin" id="Un5-ps-fOX"/>
+                            <constraint firstItem="Uhn-Fc-v6d" firstAttribute="leading" secondItem="oAN-gw-taY" secondAttribute="leading" id="W55-20-a5g"/>
                             <constraint firstItem="kdA-kT-bhX" firstAttribute="top" secondItem="oAN-gw-taY" secondAttribute="bottom" constant="175" id="deT-dJ-vY2"/>
+                            <constraint firstItem="Uhn-Fc-v6d" firstAttribute="trailing" secondItem="oAN-gw-taY" secondAttribute="trailing" id="xzv-ef-FXo"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="obM-yT-Q9L"/>
