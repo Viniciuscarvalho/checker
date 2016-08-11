@@ -6,4 +6,15 @@
 //  Copyright © 2016 Vinicius Carvalho. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import RxSwift
+
+class AuthenticatorView: UIViewController {
+
+    @IBOutlet weak var keyTextField: UITextField!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+
+}
