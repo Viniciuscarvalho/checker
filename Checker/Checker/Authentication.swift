@@ -7,10 +7,18 @@
 //
 
 import UIKit
-import ObjectMapper
+import Unbox
 
-struct Authentication: Mappable {
+class Authentication: Unboxable {
 
+    let keyEvent: String?
+    let sign: Bool
+    
+    required init(unboxer: Unboxer) {
+        keyEvent = unboxer.unbox("key")
+        clientId = unboxer.unbox("sign")
+        
+    }
     
 }
 

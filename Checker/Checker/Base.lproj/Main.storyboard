@@ -1,26 +1,78 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="dQm-os-b3g">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Checker" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="oUv-U0-STn" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fTV-MF-qKV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Kgc-Tt-7ON" kind="relationship" relationship="rootViewController" id="eTq-31-m9q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yRQ-mh-gGM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="338"/>
+        </scene>
+        <!--Authenticator View-->
+        <scene sceneID="M5m-Fi-Ix3">
+            <objects>
+                <viewController id="Kgc-Tt-7ON" customClass="AuthenticatorView" customModule="Checker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="zx6-oW-LeN"/>
+                        <viewControllerLayoutGuide type="bottom" id="kdA-kT-bhX"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="kyj-qj-MHB">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TmD-ZR-4LB">
+                                <rect key="frame" x="213" y="128" width="175" height="148"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="OIF-Dq-6tD"/>
+                                    <constraint firstAttribute="height" constant="148" id="qJq-4z-txW"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Key" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oAN-gw-taY">
+                                <rect key="frame" x="20" y="395" width="560" height="30"/>
+                                <color key="textColor" red="0.45882352939999999" green="0.4549019608" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name Event" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uhn-Fc-v6d">
+                                <rect key="frame" x="20" y="456" width="560" height="30"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oAN-gw-taY" firstAttribute="trailing" secondItem="kyj-qj-MHB" secondAttribute="trailingMargin" id="1OK-Mp-hjL"/>
+                            <constraint firstItem="Uhn-Fc-v6d" firstAttribute="top" secondItem="oAN-gw-taY" secondAttribute="bottom" constant="31" id="Gnl-8A-vW1"/>
+                            <constraint firstItem="TmD-ZR-4LB" firstAttribute="centerX" secondItem="oAN-gw-taY" secondAttribute="centerX" id="PJm-qe-w6U"/>
+                            <constraint firstItem="TmD-ZR-4LB" firstAttribute="top" secondItem="zx6-oW-LeN" secondAttribute="bottom" constant="64" id="TY7-XJ-Nfd"/>
+                            <constraint firstItem="oAN-gw-taY" firstAttribute="leading" secondItem="kyj-qj-MHB" secondAttribute="leadingMargin" id="Un5-ps-fOX"/>
+                            <constraint firstItem="Uhn-Fc-v6d" firstAttribute="leading" secondItem="oAN-gw-taY" secondAttribute="leading" id="W55-20-a5g"/>
+                            <constraint firstItem="kdA-kT-bhX" firstAttribute="top" secondItem="oAN-gw-taY" secondAttribute="bottom" constant="175" id="deT-dJ-vY2"/>
+                            <constraint firstItem="Uhn-Fc-v6d" firstAttribute="trailing" secondItem="oAN-gw-taY" secondAttribute="trailing" id="xzv-ef-FXo"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="obM-yT-Q9L"/>
+                    <connections>
+                        <outlet property="keyTextField" destination="oAN-gw-taY" id="Pzw-x5-EdU"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NLm-b2-NpA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="797" y="338"/>
         </scene>
     </scenes>
 </document>
