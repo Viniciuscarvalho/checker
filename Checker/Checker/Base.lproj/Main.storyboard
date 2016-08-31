@@ -143,17 +143,41 @@
         <scene sceneID="F9h-CH-eAe">
             <objects>
                 <tableViewController id="Erv-pa-wbv" customClass="RSVPListTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="eQt-Df-tQy">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="523" sectionHeaderHeight="28" sectionFooterHeight="28" id="eQt-Df-tQy">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Wjr-HV-Qxz">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="523" id="Wjr-HV-Qxz">
+                                <rect key="frame" x="0.0" y="28" width="600" height="523"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wjr-HV-Qxz" id="K0J-1D-Z6J">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="522"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lxv-oo-gPV" userLabel="Container View">
+                                            <rect key="frame" x="20" y="116" width="560" height="200"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="200" id="yEf-OA-ycc"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l93-Dm-MJp" userLabel="Foreground View">
+                                            <rect key="frame" x="20" y="8" width="560" height="100"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="Hjd-Vd-Ksy"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Lxv-oo-gPV" firstAttribute="top" secondItem="K0J-1D-Z6J" secondAttribute="topMargin" constant="108" identifier="ContainerViewTop" id="58l-3E-rxy"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Lxv-oo-gPV" secondAttribute="trailing" constant="12" id="958-nY-l6k"/>
+                                        <constraint firstItem="Lxv-oo-gPV" firstAttribute="leading" secondItem="K0J-1D-Z6J" secondAttribute="leadingMargin" constant="12" id="Dr7-3f-1Yb"/>
+                                        <constraint firstItem="l93-Dm-MJp" firstAttribute="top" secondItem="K0J-1D-Z6J" secondAttribute="topMargin" identifier="ForegroundViewTop" id="OSj-Q2-dS9"/>
+                                        <constraint firstItem="l93-Dm-MJp" firstAttribute="leading" secondItem="K0J-1D-Z6J" secondAttribute="leadingMargin" constant="12" id="U5o-Ko-mpO"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="l93-Dm-MJp" secondAttribute="trailing" constant="12" id="vqz-Nc-KcL"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
