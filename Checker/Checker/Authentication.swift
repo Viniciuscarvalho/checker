@@ -7,16 +7,19 @@
 //
 
 import UIKit
-import Unbox
+import ObjectMapper
 
-class Authentication: Unboxable {
+class Authentication: Mappable {
 
-    let keyEvent: String?
-    let sign: Bool
+    var keyEvent: String?
+    var sign: Bool
     
-    required init(unboxer: Unboxer) {
-        keyEvent = unboxer.unbox("key")
-        clientId = unboxer.unbox("sign")
+    init?(_ map: Map) {}
+    
+    mutating func mapping(map: Map) {
+        
+        keyEvent <- map["key"]
+        clientId <- map["sign"]
         
     }
     

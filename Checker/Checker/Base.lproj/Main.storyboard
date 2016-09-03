@@ -194,13 +194,13 @@
         <!--Root View Controller-->
         <scene sceneID="Iw4-yA-szl">
             <objects>
-                <tableViewController storyboardIdentifier="EventTableViewController" id="xE8-0l-F6Z" customClass="EventTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="EventsListViewController" id="xE8-0l-F6Z" customClass="EventTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="16r-aX-MCU">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="B3q-zb-lfb">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="B3q-zb-lfb" customClass="EventCell" customModule="Checker" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="600" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="B3q-zb-lfb" id="uAz-AM-t8k">
@@ -235,6 +235,10 @@
                                         <constraint firstItem="y4m-8Z-lRi" firstAttribute="trailing" secondItem="6q3-2T-9Il" secondAttribute="trailing" id="vPm-f7-gVE"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="eventDateLabel" destination="6q3-2T-9Il" id="ZoS-S9-6gr"/>
+                                    <outlet property="eventTitleLabel" destination="y4m-8Z-lRi" id="IqT-me-VTe"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

@@ -18,6 +18,7 @@ class EventCell: UITableViewCell {
     }
     
     override func setSelected(selected: Bool, animated: Bool) {
+        @IBOutlet weak var eventDateLabel: UILabel!
         super.setSelected(selected, animated: animated)
     }
     

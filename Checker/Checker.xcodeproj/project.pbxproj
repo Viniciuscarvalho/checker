@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8A5C87E92009DAFD8EB31CD6 /* Pods_Checker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 108AA5F0CF297140F5EC5977 /* Pods_Checker.framework */; };
+		EA5FC7C61D790F6300B8CD3D /* EventsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5FC7C51D790F6300B8CD3D /* EventsListViewController.swift */; };
+		EA5FC7C81D79110E00B8CD3D /* EventAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5FC7C71D79110E00B8CD3D /* EventAPI.swift */; };
 		EAA7B4A51D1F116C00C9E01D /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA7B4A41D1F116C00C9E01D /* Member.swift */; };
 		EAA7B4A71D1F17C400C9E01D /* MembersListViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA7B4A61D1F17C400C9E01D /* MembersListViewControler.swift */; };
 		EAB8F38B1D13851E006D26C1 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB8F38A1D13851E006D26C1 /* Authentication.swift */; };
@@ -52,6 +54,8 @@
 		108AA5F0CF297140F5EC5977 /* Pods_Checker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Checker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F6E040EB1B3E0C10FB3272 /* Pods-Checker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Checker/Pods-Checker.debug.xcconfig"; sourceTree = "<group>"; };
 		B7D1D2C011B1722519811F45 /* Pods-Checker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Checker/Pods-Checker.release.xcconfig"; sourceTree = "<group>"; };
+		EA5FC7C51D790F6300B8CD3D /* EventsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsListViewController.swift; sourceTree = "<group>"; };
+		EA5FC7C71D79110E00B8CD3D /* EventAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventAPI.swift; sourceTree = "<group>"; };
 		EAA7B4A41D1F116C00C9E01D /* Member.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		EAA7B4A61D1F17C400C9E01D /* MembersListViewControler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersListViewControler.swift; sourceTree = "<group>"; };
 		EAB8F38A1D13851E006D26C1 /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
@@ -122,6 +126,14 @@
 				108AA5F0CF297140F5EC5977 /* Pods_Checker.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA5FC7C41D790F4500B8CD3D /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				EA5FC7C51D790F6300B8CD3D /* EventsListViewController.swift */,
+			);
+			name = Events;
 			sourceTree = "<group>";
 		};
 		EADC43EC1D5AB5760056013E /* ViewModels */ = {
@@ -226,6 +238,7 @@
 		EAF48E511D7782F200585C6D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EAFAE7061D0C904F00303B43 /* Networking */,
 				EAFAE7031D0C902400303B43 /* ViewControllers */,
 				EAFAE7041D0C902C00303B43 /* Views */,
 				EAFAE7051D0C903400303B43 /* Model */,
@@ -265,7 +278,6 @@
 				EAF48E431D776B4500585C6D /* App */,
 				EAFAE7071D0C916500303B43 /* Extensions */,
 				EAFAE7091D0C92A400303B43 /* Resources */,
-				EAFAE7061D0C904F00303B43 /* Networking */,
 			);
 			path = Checker;
 			sourceTree = "<group>";
@@ -291,6 +303,7 @@
 		EAFAE7031D0C902400303B43 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				EA5FC7C41D790F4500B8CD3D /* Events */,
 				EAEDD8641D7668A600AF08A8 /* History */,
 				EAEDD8631D76675200AF08A8 /* Authentication */,
 				EAEDD8621D76674900AF08A8 /* Members */,
@@ -322,6 +335,7 @@
 				EADC43EF1D5AB85F0056013E /* AuthenticationAPI.swift */,
 				EADC43F11D5AB86B0056013E /* MemberAPI.swift */,
 				EADC43F31D5ABA0B0056013E /* Network.swift */,
+				EA5FC7C71D79110E00B8CD3D /* EventAPI.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -535,12 +549,14 @@
 			files = (
 				EAFAE7111D0C975200303B43 /* MembersCell.swift in Sources */,
 				EAB8F38D1D138546006D26C1 /* AuthenticatorViewController.swift in Sources */,
+				EA5FC7C61D790F6300B8CD3D /* EventsListViewController.swift in Sources */,
 				EAA7B4A71D1F17C400C9E01D /* MembersListViewControler.swift in Sources */,
 				EAF48E481D77752F00585C6D /* HistoryCell.swift in Sources */,
 				EAB8F38B1D13851E006D26C1 /* Authentication.swift in Sources */,
 				EAF48E4C1D777BFB00585C6D /* EventListViewModel.swift in Sources */,
 				EAA7B4A51D1F116C00C9E01D /* Member.swift in Sources */,
 				EAF48E4F1D777DD500585C6D /* EventCell.swift in Sources */,
+				EA5FC7C81D79110E00B8CD3D /* EventAPI.swift in Sources */,
 				EAF48E551D7783D500585C6D /* Event.swift in Sources */,
 				EADC43F41D5ABA0B0056013E /* Network.swift in Sources */,
 				EADC43EE1D5AB6470056013E /* MemberListViewModel.swift in Sources */,
