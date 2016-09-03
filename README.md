@@ -16,9 +16,7 @@ To see the event and the members of your event enter the `id` of your event, you
 
 `/ Events / 231243918 /`
 
-2. **RSVP List**
-
-Displays all users who have confirmed their presence at the event with details of it.
+###Images of project (Sketch) -> 
 
 ## Contributing
 
