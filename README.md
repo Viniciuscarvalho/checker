@@ -16,7 +16,7 @@ To see the event and the members of your event enter the `id` of your event, you
 
 `/ Events / 231243918 /`
 
-###Images of project (Sketch) -> 
+###Images of project (PNG) -> [Flickr](https://www.flickr.com/photos/132895431@N06/albums/72157673458810415)
 
 ## Contributing
 
